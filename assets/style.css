@@ -13,9 +13,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-h1::selection, h2::selection, h3::selection, p::selection {
-    color: orange;
-}
 
 nav {
     position: fixed;
