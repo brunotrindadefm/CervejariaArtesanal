@@ -4,14 +4,17 @@ function toggleMenu() {
 }
 
 const logo = document.getElementById('logo');
+const menutoggle = document.getElementById('menutoggle');
 
-function mudarCorLogo() {
+function mudarCorLogos() {
 
     if (logo.style.color === 'black'){
         logo.style.color = 'orange';
+        menutoggle.style.color = 'orange';
     } else {
         logo.style.color = 'black';
+        menutoggle.style.color = 'black';
     }
 }
 
-setInterval(mudarCorLogo, 1000);
+setInterval(mudarCorLogos, 2000);
