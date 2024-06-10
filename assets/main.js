@@ -8,7 +8,7 @@ const menutoggle = document.getElementById('menutoggle');
 
 function mudarCorLogos() {
 
-    if (logo.style.color === 'black'){
+    if (logo.style.color === 'black') {
         logo.style.color = 'orange';
         menutoggle.style.color = 'orange';
     } else {
