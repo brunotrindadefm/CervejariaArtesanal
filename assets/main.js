@@ -18,3 +18,27 @@ function mudarCorLogos() {
 }
 
 setInterval(mudarCorLogos, 2000);
+
+
+
+function darkMode () {
+
+const body = document.body;
+const checkbox = document.getElementById('darkMode');
+const contato = document.getElementById('contato');
+const produtos = document.getElementById('produtos');
+const footer = document.getElementById('footer');
+
+
+if (checkbox.checked) {
+    body.classList.add('dark-mode');
+    contato.classList.add('dark-mode');
+    produtos.classList.add('dark-mode');
+    footer.classList.add('dark-mode');
+} else {
+    body.classList.remove('dark-mode');
+    contato.classList.remove('dark-mode');
+    produtos.classList.remove('dark-mode');
+    footer.classList.remove('dark-mode');
+}
+}

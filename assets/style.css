@@ -14,6 +14,23 @@ body {
     overflow-x: hidden;
 }
 
+.contato.dark-mode {
+    background-color: #212121;
+    color: #d478f6;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.produtos.dark-mode {
+    background-color: #212121;
+    color: #ebebeb;
+    transition: background-color 0.5s, color 0.5s;
+}
+footer.dark-mode {
+    background-color: #363434;
+    color: #ebebeb;
+    transition: background-color 0.5s, color 0.5s;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -340,6 +357,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .direitos {
@@ -449,6 +467,7 @@ input:checked+.slider:before {
 .produtos {
     background-color: #F0F8FF;
     padding: 40px 20px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .produtos h2 {
@@ -672,6 +691,7 @@ td {
     background-color: #FFF0F5;
     width: 100%;
     padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
     box-sizing: border-box;
 }
 
@@ -692,10 +712,10 @@ td {
 .formulario {
     max-width: 400px;
     padding: 30px;
-    margin-top: 20px;
+    margin: 20px 0; 
     border-radius: 20px;
-    background-color: #E6E6FA;
-    border: 3px solid #d478f6;
+    background-color: #d478f6 ;
+    border: 3px solid #a950c5;
     box-sizing: border-box;
 }
 
@@ -769,7 +789,8 @@ textarea {
     border: 2px solid #d478f6;
     background-color: #E6E6FA;
     height: 40vh;
-    margin: 20px 20px;
+
+    margin-right: 33px;
 }
 
 @media (max-width: 950px) {
