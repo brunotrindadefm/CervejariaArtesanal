@@ -24,7 +24,7 @@ nav {
     align-items: center;
     padding: 12px 12px;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.6);
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .logo {
@@ -97,6 +97,7 @@ nav {
 .menu ul a:hover::after {
     width: 100%;
 }
+
 .menu ul a:hover {
     color: grey;
 }
@@ -164,7 +165,7 @@ nav {
 }
 
 .landing img {
-    border-radius: 50px 200px;
+    border-radius: 50px 150px;
     width: 90%;
     height: auto;
     max-height: 920px;
@@ -338,6 +339,7 @@ footer {
     padding: 15px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .direitos {
@@ -351,10 +353,13 @@ footer {
     .direitos {
         display: none;
     }
+
     footer {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .darkLight {
+        margin-top: 10px;
     }
 }
 
@@ -372,16 +377,73 @@ footer {
     color: #212121;
 }
 
-.social1:hover, .social2:hover {
-    color: blue;
+.social1:hover,
+.social2:hover {
+    color: rgb(24, 75, 246);
 }
 
 .social3:hover {
-    color: orange;
+    color: #fcb045;
 }
 
 .social4:hover {
     color: rgb(255, 0, 0);
+}
+
+
+.darkLight {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 0.1em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+}
+
+input:checked+.slider:before {
+    transform: translateX(2.8em) rotate(360deg);
 }
 
 .produtos {
@@ -432,6 +494,15 @@ td:hover {
 td {
     background-color: #fff;
     border: 4px solid #dddddd;
+}
+
+.tabela caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .gridgrid {
@@ -497,9 +568,9 @@ td {
     font-family: "Arial";
     transition: background 0.3s;
     margin: 5px 0;
-  }
-  
-  .button::before {
+}
+
+.button::before {
     position: absolute;
     content: attr(data-tooltip);
     width: var(--tooltip-width);
@@ -511,9 +582,9 @@ td {
     line-height: var(--tooltip-height);
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
     left: calc(50% - var(--tooltip-width) / 2);
-  }
-  
-  .button::after {
+}
+
+.button::after {
     position: absolute;
     content: '';
     width: 0;
@@ -522,75 +593,80 @@ td {
     border-top-color: #555;
     left: calc(50% - 10px);
     bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-  }
-  
-  .button::after,.button::before {
+}
+
+.button::after,
+.button::before {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
-  }
-  
-  .text {
+}
+
+.text {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .button-wrapper,.text,.icon {
+}
+
+.button-wrapper,
+.text,
+.icon {
     overflow: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     color: #fff;
-  }
-  
-  .text {
+}
+
+.text {
     top: 0
-  }
-  
-  .text,.icon {
+}
+
+.text,
+.icon {
     transition: top 0.5s;
-  }
-  
-  .icon {
+}
+
+.icon {
     color: #fff;
     top: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .icon svg {
+}
+
+.icon svg {
     width: 24px;
     height: 24px;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background: #222;
     cursor: pointer;
-  }
-  
-  .button:hover .text {
+}
+
+.button:hover .text {
     top: -100%;
-  }
-  
-  .button:hover .icon {
+}
+
+.button:hover .icon {
     top: 0;
-  }
-  
-  .button:hover:before,.button:hover:after {
+}
+
+.button:hover:before,
+.button:hover:after {
     opacity: 1;
     visibility: visible;
-  }
-  
-  .button:hover:after {
+}
+
+.button:hover:after {
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-  }
-  
-  .button:hover:before {
+}
+
+.button:hover:before {
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-  }  
+}
 
 .contato {
     background-color: #FFF0F5;
@@ -748,5 +824,9 @@ textarea {
         height: 0.2vh;
         width: 25vh;
         margin: 20px 10px;
+    }
+
+    .direitos {
+        display: none;
     }
 }
