@@ -15,13 +15,13 @@ body {
 }
 
 .contato.dark-mode {
-    background: linear-gradient(to bottom, #303030, #212121);
+    background: linear-gradient(to bottom, #362929, #2d2117);
     color: white;
     transition: background 0.5s, color 0.5s;
 }
 
 .produtos.dark-mode {
-    background: linear-gradient(to bottom, #282828, #303030);
+    background: linear-gradient(to bottom, #302424, #362929);
     color: white;
     transition: background 0.5s, color 0.5s;
 }
@@ -32,18 +32,47 @@ footer.dark-mode {
 }
 
 .secao1.dark-mode {
-    background:linear-gradient(to bottom , #212121, #252525) ;
+    background:linear-gradient(to bottom , #453224  , #362c2c) ;
     color: white;
 }
 
 .quemsomos.dark-mode {
-    background: linear-gradient(to bottom, #252525, #282828);
+    background: linear-gradient(to bottom, #362c2c, #302424);
     color: white;
 }
+.quemsomos.dark-mode h2 {
+    color: white;
+}
+
+.membros.dark-mode {
+    background-color: #433f3f;
+}
+
+.membros.dark-mode p {
+    color: white;
+}
+
+.membros.dark-mode h3 {
+    color: white;
+    text-shadow: 2px 2px 10px orange;
+}
+
+.produtosgrid.dark-mode {
+    border: 2px solid white;
+    background-color: #222020;
+}
+.produtosgrid.dark-mode p {
+    color: white;
+}
+
 nav.dark-mode {
     background-color: #212121;
     color: white;
     transition: background-color 0.5s, color 0.5s;
+}
+
+.sobreimagem.dark-mode  {
+    text-shadow: 2px 2px 10px black;
 }
 
 nav {
@@ -67,6 +96,7 @@ nav {
     text-align: left;
     font-weight: bold;
     color: black;
+    text-shadow: 2px 2px 20px orange;
 }
 
 .menu {
@@ -121,7 +151,7 @@ nav {
     /* Posicionado no fundo do elemento */
     left: 0;
     /* Alinhado à esquerda */
-    background-color: black;
+    background-color: rgb(255, 166, 0);
     /* Cor do traço */
     transition: width 0.4s ease;
     /* Transição suave para a largura */
@@ -129,10 +159,6 @@ nav {
 
 .menu ul a:hover::after {
     width: 100%;
-}
-
-.menu ul a:hover {
-    color: grey;
 }
 
 .imagemlogo {
@@ -307,9 +333,9 @@ nav {
 .quemsomos h2 {
     color: #212121;
     text-align: center;
-    font-size: 2em;
+    font-size: 3.5em;
     font-family: 'Monstserrat', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .nós {
@@ -406,7 +432,7 @@ footer {
     color: grey;
 }
 
-.redes-sociaiscontato a {
+.redes-sociais-contato a {
     display: inline-block;
     margin: 10px 10px;
     font-size: 30px;
@@ -495,9 +521,9 @@ input:checked+.slider:before {
 
 .produtos h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .gridgrid {
@@ -512,7 +538,7 @@ input:checked+.slider:before {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1400px;
 }
 
 .produtosgrid {
@@ -679,9 +705,9 @@ input:checked+.slider:before {
 
 .contato h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -753,32 +779,31 @@ textarea {
 .contatotexto h2 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4.7vh;
+    font-size: 3em;
 }
 
 .contatotexto p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.9vh;
+    font-size: 1.7vh;
 }
 
 .barracontato {
     border: 2px solid #d478f6;
     background-color: #E6E6FA;
     height: 40vh;
-
     margin-right: 33px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
     .contatotexto h2 {
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 4.2vh;
+        font-size: 4.7vh;
     }
 
     .contatotexto p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.6vh;
+        font-size: 1.7vh;
     }
 
     .barracontato {
@@ -825,5 +850,14 @@ textarea {
 
     .direitos {
         display: none;
+    }
+    .contato h2 {
+        font-size: 2.5em;
+    }
+    .quemsomos h2 {
+        font-size: 2.5em;
+    }
+    .produtos h2 {
+        font-size: 2.5em;
     }
 }
