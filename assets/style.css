@@ -16,19 +16,32 @@ body {
 
 .contato.dark-mode {
     background-color: #212121;
-    color: #d478f6;
+    color: white;
     transition: background-color 0.5s, color 0.5s;
 }
 
 .produtos.dark-mode {
-    background-color: #212121;
-    color: #ebebeb;
+    background-color: #000000;
+    color: white;
     transition: background-color 0.5s, color 0.5s;
 }
 footer.dark-mode {
     background-color: #363434;
-    color: #ebebeb;
+    color: white;
     transition: background-color 0.5s, color 0.5s;
+}
+
+.secao1.dark-mode {
+    background-color: #171717;
+    color: white;
+}
+
+.quemsomos.dark-mode {
+    background-color: #222;
+    color: white;
+}
+.menu ul a.dark-mode {
+    color: white;
 }
 
 nav {
@@ -398,14 +411,24 @@ footer {
 .social1:hover,
 .social2:hover {
     color: rgb(24, 75, 246);
+    transition: ease 0.5s;
 }
 
 .social3:hover {
     color: #fcb045;
+    transition: ease 0.5s;
+
 }
 
 .social4:hover {
     color: rgb(255, 0, 0);
+    transition: ease 0.5s;
+
+}
+
+nav.dark-mode {
+    background-color: #212121;
+    color: white;
 }
 
 

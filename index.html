@@ -16,14 +16,14 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <div class="menu-toggle" onclick="toggleMenu()">
                 <i class="fa-solid fa-bars" id="menutoggle"></i>
             </div>
             <div class="logo" id="logo">
                 <h1>Camacho's Craft Beer</h1>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <ul>
                     <li><a href="#">
                             <p>Home</p>
@@ -49,7 +49,7 @@
     </header>
 
     <main>
-        <section class="secao1">
+        <section class="secao1" id="secao1">
             <div class="landing">
                 <div class="sobreimagem"><b>
                         <h1>Não somos a mais famosa,
@@ -94,42 +94,7 @@
         <section class="produtos" id="produtos">
 
             <h2>ALGUNS DE NOSSOS PRODUTOS</h2>
-
-            <div class="tabela">
-                <table>
-                    <caption>Tabela de Preços das Bebidas</caption>
-                    <thead>
-                        <tr>
-                                <th>TIPO</th>
-                                <th>ML</th>
-                                <th>PREÇO R$</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>IPA</td>
-                            <td>500</td>
-                            <td>12,00</td>
-                        </tr>
-                        <tr>
-                            <td>APA</td>
-                            <td>500</td>
-                            <td>15,00</td>
-                        </tr>
-                        <tr>
-                            <td>RED</td>
-                            <td>500</td>
-                            <td>12,00</td>
-                        </tr>
-                        <tr>
-                            <td>Cream Ale</td>
-                            <td>500</td>
-                            <td>10,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+               
             <div class="gridgrid">
                 <div class="grid">
                     <div class="produtosgrid"><img src="image/Cabulosa.png" alt="furiosa">
@@ -246,6 +211,54 @@
                     </div>
                     <div class="produtosgrid"><img src="image/Cabulosa.png" alt="furiosa">
                         <p><b>CABULOSA</b></p>
+                        <div data-tooltip="Preço:- 10R$" class="button">
+                            <div class="button-wrapper">
+                                <div class="text">Comprar</div>
+                                <span class="icon">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16"
+                                        width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtosgrid"><img src="image/Furiosa.png" alt="furiosa">
+                        <p><b>FURIOSA</b></p>
+                        <div data-tooltip="Preço:- 10R$" class="button">
+                            <div class="button-wrapper">
+                                <div class="text">Comprar</div>
+                                <span class="icon">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16"
+                                        width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtosgrid"><img src="image/Furiosa.png" alt="furiosa">
+                        <p><b>FURIOSA</b></p>
+                        <div data-tooltip="Preço:- 10R$" class="button">
+                            <div class="button-wrapper">
+                                <div class="text">Comprar</div>
+                                <span class="icon">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16"
+                                        width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtosgrid"><img src="image/Furiosa.png" alt="furiosa">
+                        <p><b>FURIOSA</b></p>
                         <div data-tooltip="Preço:- 10R$" class="button">
                             <div class="button-wrapper">
                                 <div class="text">Comprar</div>
