@@ -3,24 +3,6 @@ function toggleMenu() {
     menu.classList.toggle('active');
 }
 
-const logo = document.getElementById('logo');
-const menutoggle = document.getElementById('menutoggle');
-
-function mudarCorLogos() {
-
-    if (logo.style.color === 'black') {
-        logo.style.color = 'orange';
-        menutoggle.style.color = 'orange';
-    } else {
-        logo.style.color = 'black';
-        menutoggle.style.color = 'black';
-    }
-}
-
-setInterval(mudarCorLogos, 2000);
-
-
-
 function darkMode () {
 
 const body = document.body;
@@ -31,6 +13,7 @@ const footer = document.getElementById('footer');
 const secao1 = document.getElementById('secao1');
 const quemSomos = document.getElementById('quemsomos');
 const nav = document.getElementById('nav');
+const produtosgrid = document.getElementsByClassName('produtosgrid')
 
 
 if (checkbox.checked) {
@@ -41,6 +24,7 @@ if (checkbox.checked) {
     quemSomos.classList.add('dark-mode');
     secao1.classList.add('dark-mode');
     nav.classList.add('dark-mode');
+    logo.style.color = 'white';
 } else {
     body.classList.remove('dark-mode');
     contato.classList.remove('dark-mode');
@@ -49,5 +33,6 @@ if (checkbox.checked) {
     secao1.classList.remove('dark-mode');
     quemSomos.classList.remove('dark-mode');
     nav.classList.remove('dark-mode');
+    logo.style.color = 'black'
 }
 }
