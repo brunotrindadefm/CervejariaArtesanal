@@ -15,16 +15,17 @@ body {
 }
 
 .contato.dark-mode {
-    background: linear-gradient(to bottom, #362929, #2d2117);
+    background: linear-gradient(to bottom, rgb(51, 51, 51), black);
     color: white;
     transition: background 0.5s, color 0.5s;
 }
 
 .produtos.dark-mode {
-    background: linear-gradient(to bottom, #302424, #362929);
+    background: linear-gradient(to bottom, rgb(31, 31, 31), rgb(51, 51, 51));
     color: white;
     transition: background 0.5s, color 0.5s;
 }
+
 footer.dark-mode {
     background-color: #212121;
     color: white;
@@ -32,14 +33,15 @@ footer.dark-mode {
 }
 
 .secao1.dark-mode {
-    background:linear-gradient(to bottom , #453224  , #362c2c) ;
+    background: linear-gradient(to bottom, black, rgb(51, 51, 51));
     color: white;
 }
 
 .quemsomos.dark-mode {
-    background: linear-gradient(to bottom, #362c2c, #302424);
+    background: linear-gradient(to bottom, rgb(51, 51, 51), rgb(31, 31, 31));
     color: white;
 }
+
 .quemsomos.dark-mode h2 {
     color: white;
 }
@@ -54,13 +56,13 @@ footer.dark-mode {
 
 .membros.dark-mode h3 {
     color: white;
-    text-shadow: 2px 2px 10px orange;
 }
 
 .produtosgrid.dark-mode {
     border: 2px solid white;
     background-color: #222020;
 }
+
 .produtosgrid.dark-mode p {
     color: white;
 }
@@ -71,7 +73,7 @@ nav.dark-mode {
     transition: background-color 0.5s, color 0.5s;
 }
 
-.sobreimagem.dark-mode  {
+.sobreimagem.dark-mode {
     text-shadow: 2px 2px 10px black;
 }
 
@@ -83,20 +85,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 12px;
+    padding: 10px 10px;
     box-shadow: 2px 10px 50px rgba(0, 0, 0, 0.6);
     z-index: 1000;
     transition: background-color 0.5s, color 0.5s;
 }
 
-.logo {
-    font-size: 1.1em;
+.logo h1 {
+    font-size: 30px;
     flex: 1;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     font-weight: bold;
     color: black;
-    text-shadow: 2px 2px 20px orange;
 }
 
 .menu {
@@ -117,7 +118,7 @@ nav {
 .menu ul {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin-top: 30px;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -147,7 +148,7 @@ nav {
     /* Largura inicial do traço */
     height: 2px;
     /* Altura do traço */
-    bottom: 0;
+    bottom: 20px;
     /* Posicionado no fundo do elemento */
     left: 0;
     /* Alinhado à esquerda */
@@ -206,7 +207,7 @@ nav {
 }
 
 .secao1 {
-    background: linear-gradient(to bottom, #FFFAF0 ,#FAEBD7);
+    background: linear-gradient(to bottom, #FFFAF0, #FAEBD7);
     width: 100%;
     margin-bottom: 40px;
     padding-top: 90px;
@@ -299,7 +300,7 @@ nav {
         display: flex;
         max-height: 400px;
         max-width: 200px;
-        top: 90%;
+        top: 100%;
     }
 
     .menu-toggle {
@@ -325,7 +326,7 @@ nav {
 
 .quemsomos {
     padding: 60px 20px;
-    background:linear-gradient(to bottom, #FAEBD7,#FFFFF0);
+    background: linear-gradient(to bottom, #FAEBD7, #FFFFF0);
     margin-top: 0px;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -404,13 +405,6 @@ footer {
     transition: background-color 0.5s, color 0.5s;
 }
 
-.direitos {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-}
-
 @media (max-width: 620px) {
     .direitos {
         display: none;
@@ -420,6 +414,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .darkLight {
         margin-top: 10px;
     }
@@ -547,9 +542,9 @@ input:checked+.slider:before {
     align-items: center;
     background-color: white;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 20px;
     text-align: center;
@@ -557,7 +552,7 @@ input:checked+.slider:before {
 
 .produtosgrid:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .produtosgrid img {
@@ -690,7 +685,7 @@ input:checked+.slider:before {
 }
 
 .contato {
-    background: linear-gradient(to bottom,#FFFAF0, #FFFFF0);
+    background: linear-gradient(to bottom, #FFFAF0, #FFFFF0);
     width: 100%;
     padding: 20px;
     transition: background 0.5, color 0.5s;
@@ -714,9 +709,9 @@ input:checked+.slider:before {
 .formulario {
     max-width: 400px;
     padding: 30px;
-    margin: 20px 0; 
+    margin: 20px 0;
     border-radius: 20px;
-    background-color: #d478f6 ;
+    background-color: #d478f6;
     border: 3px solid #a950c5;
     box-sizing: border-box;
 }
@@ -748,6 +743,7 @@ textarea:active {
 }
 
 textarea {
+    height: 150px;
     resize: vertical;
     min-height: 100px;
     max-height: 300px;
@@ -851,12 +847,15 @@ textarea {
     .direitos {
         display: none;
     }
+
     .contato h2 {
         font-size: 2.5em;
     }
+
     .quemsomos h2 {
         font-size: 2.5em;
     }
+
     .produtos h2 {
         font-size: 2.5em;
     }

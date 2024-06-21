@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cervejaria artesanal">
-    <meta name="keywords" content="palavra-chave1, palavra-chave2, palavra-chave3">
+    <meta name="keywords" content="Cervejaria Artesanal Camachos">
     <meta name="author" content="Bruno Trindade">
     <meta name="copyright" content="© 2024 Bruno Trindade">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cervejaria Camacho's Craft Beer</title>
     <link rel="icon" href="image/Logo Camach'os Creft Beer Original (2).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
 
 <body>
@@ -20,8 +22,8 @@
             <div class="menu-toggle" onclick="toggleMenu()">
                 <i class="fa-solid fa-bars" id="menutoggle"></i>
             </div>
-            <div class="logo" id="logo">
-                <h1>Camacho's Craft Beer</h1>
+            <div class="logo">
+                <h1 id="logo">Camacho's Craft Beer</h1>
             </div>
             <div class="menu" id="menu">
                 <ul>
@@ -33,9 +35,6 @@
                         </a></li>
                     <li><a href="#produtos">
                             <p>Produtos</p>
-                        </a></li>
-                    <li><a href="#camachogrill">
-                            <p>Grill</p>
                         </a></li>
                     <li><a href="#contato">
                             <p>Contato</p>
@@ -62,9 +61,9 @@
         </section>
 
         <section class="quemsomos" id="quemsomos">
-            <h2 >QUEM SOMOS</h2>
+            <h2>QUEM SOMOS</h2>
             <div class="nós">
-                <div class="membros" >
+                <div class="membros">
                     <img src="image/Screenshot from 2024-04-11 13-01-00.png" alt="sócio">
                     <h3>Dênio Friaça Moreira</h3>
                     <p><b>Sócio</b></p>
@@ -72,7 +71,7 @@
                         laborum, fuga praesentium adipisci? Natus cum repellat, facere repudiandae id asperiores in
                         architecto perferendis ipsam sint.</p>
                 </div>
-                <div class="membros" >
+                <div class="membros">
                     <img src="image/311294230_185300630672970_1803386777664732035_n.jpg" alt="sócio">
                     <h3>Júlio Henrique Ferreira</h3>
                     <p><b>Sócio</b></p>
@@ -80,8 +79,8 @@
                         numquam illum ipsum fuga, soluta omnis, voluptatem, voluptatibus nihil ad eius. Recusandae
                         incidunt ab eligendi pariatur.</p>
                 </div>
-                <div class="membros" >
-                    <img src="image/422466111_933480654801833_8264336994063158875_n.jpg" alt="sócio">
+                <div class="membros">
+                    <img src="image/BrunoTrindade.png" alt="sócio">
                     <h3>Bruno Trindade Friaça Moreia</h3>
                     <p><b>Garoto de Programa</b></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, magni! Vitae eum magni animi
@@ -94,7 +93,7 @@
         <section class="produtos" id="produtos">
 
             <h2>PRODUTOS</h2>
-               
+
             <div class="gridgrid">
                 <div class="grid">
                     <div class="produtosgrid"><img src="image/Cabulosa.png" alt="furiosa">
@@ -297,16 +296,16 @@
                 </div>
                 <div class="barracontato"></div>
                 <form class="formulario" method="get">
-                    <label for="name">Nome</label>
+                    <label for="name" id="nome">Nome</label>
                     <input type="text" name="name" id="name">
 
-                    <label for="email">Email</label>
+                    <label for="email" id="email">Email</label>
                     <input type="email" name="email" id="email">
 
-                    <label for="mensagem">Deixe aqui sua mensagem</label>
+                    <label for="mensagem" id="mensagem">Deixe aqui sua mensagem</label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
-                    <button type="submit">Enviar</button>
+                    <button id="botaoForm" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -317,23 +316,25 @@
     <footer id="footer">
         <div class="darkLight" id="darkLight" onclick="darkMode()">
             <div>
-            <label class="switch">
-                <input type="checkbox" id="darkMode">
-                <span class="slider"></span>
-            </label>
+                <label class="switch">
+                    <input type="checkbox" id="darkMode">
+                    <span class="slider"></span>
+                </label>
             </div>
             <div>
-                <b><span>DarkMode</span></b>
+                <b><span id="dark-light">DarkMode</span></b>
             </div>
         </div>
 
-        <div class="direitos">
-            <p>© 2024 Bruno Trindade. Todos os direitos reservados.</p>
+        <div class="direitos justify-content-center align-self-center">
+            © 2024 Bruno Trindade. Todos os direitos reservados.
         </div>
 
         <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/bruno-trindade-883b03300/" target="_blank" class="social2"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/brunotrindadefm" target="_blank" class="social4"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bruno-trindade-883b03300/" target="_blank" class="social2"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/brunotrindadefm" target="_blank" class="social4"><i
+                    class="fa-brands fa-github"></i></a>
             <a href="https://www.facebook.com/cervejariacamachosbeer/?locale=pt_BR" target="_blank" class="social1"><i
                     class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/camachoscraftbeer/" target="_blank" class="social3"><i
